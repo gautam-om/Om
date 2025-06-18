@@ -1,0 +1,33 @@
+package ProgramingQuestion;
+
+public class PrintValueSaprate {
+
+	public static void main(String[] args) {
+		
+		String s="abc@123&Adk";
+		String ch="";
+		String num="";
+		String sp="";
+		
+		for(int i=0;i<s.length(); i++)
+		{
+			if(s.charAt(i)>=65 && s.charAt(i)<=122)
+			{
+			 ch=ch+s.charAt(i);
+			}
+			else if(s.charAt(i)>='0' && s.charAt(i)<='9')
+			{
+				num=num+s.charAt(i);
+			}
+			else
+			{
+				sp=sp+s.charAt(i);
+			}
+	   }
+		System.out.println(ch);
+		System.out.println(num);
+		System.out.println(sp);
+		System.out.println();
+
+	}
+}
